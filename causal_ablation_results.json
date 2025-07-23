@@ -1,0 +1,1102 @@
+[
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Country -> Occupation;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n    // Level 2 -> Level 1\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Country -> Occupation;\n    \n    // Level 1 -> Target\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Level 2 -> Level 1\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Country -> Occupation;\n    Education_Num -> Occupation;\n    Sex -> Occupation;\n    Race -> Occupation;\n    \n    // Level 1 -> Target\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Education_Num;\n  Occupation;\n  Hours_per_week;\n  Capital_Gain;\n  Capital_Loss;\n  Sex;\n  Race;\n  Country;\n  Workclass;\n  Income;\n\n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Country -> Occupation;\n  Education_Num -> Workclass;\n  \n  // Level 1 -> Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Level 2 -> Level 1\n    \"Education_Num\" -> \"Occupation\"\n    \"Age\" -> \"Occupation\"\n    \"Education_Num\" -> \"Capital_Gain\"\n    \"Age\" -> \"Capital_Gain\"\n    \"Education_Num\" -> \"Hours_per_week\"\n    \"Sex\" -> \"Occupation\"\n    \"Race\" -> \"Occupation\"\n    \"Country\" -> \"Occupation\"\n    \n    // Level 1 -> Income\n    \"Occupation\" -> \"Income\"\n    \"Education_Num\" -> \"Income\"\n    \"Hours_per_week\" -> \"Income\"\n    \"Capital_Gain\" -> \"Income\"\n    \"Capital_Loss\" -> \"Income\"\n    \"Sex\" -> \"Income\"\n    \"Age\" -> \"Income\"\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age;\n    Workclass;\n    Education_Num;\n    Marital_Status;\n    Occupation;\n    Relationship;\n    Race;\n    Sex;\n    Capital_Gain;\n    Capital_Loss;\n    Hours_per_week;\n    Country;\n    Income;\n\n    // Level 3 -> Level 2\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    Country -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Age -> Marital_Status;\n\n    // Level 2 -> Level 1\n    Education_Num -> Occupation;\n    Education_Num -> Capital_Gain;\n    Occupation -> Hours_per_week;\n    Occupation -> Capital_Gain;\n    Marital_Status -> Relationship;\n    Marital_Status -> Hours_per_week;\n\n    // Level 1 -> Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Relationship -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 3 -> Level 2\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  Country -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Age -> Marital_Status;\n\n  // Level 2 -> Level 1\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Marital_Status -> Relationship;\n  Marital_Status -> Capital_Gain;\n\n  // Level 1 -> Income\n  Occupation -> Income;\n  Education_Num -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Relationship -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Level 3 -> Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Country -> Occupation;\n    \n    // Level 2 -> Level 1\n    Education_Num -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    Education_Num -> Capital_Gain;\n    Occupation -> Capital_Gain;\n    \n    // Level 1 -> Target\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Education_Num -> Income;\n    Occupation -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    // Level 3 -> Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    \n    Age -> Occupation;\n    Education_Num -> Occupation;\n    Sex -> Occupation;\n    \n    Age -> Marital_Status;\n    Sex -> Marital_Status;\n    \n    // Level 2 -> Level 1\n    Education_Num -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    Education_Num -> Capital_Gain;\n    Occupation -> Capital_Gain;\n    \n    Education_Num -> Capital_Loss;\n    Occupation -> Capital_Loss;\n    \n    // Level 1 -> Target\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Education_Num -> Income;\n    Occupation -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age;\n    Education_Num;\n    Occupation;\n    Hours_per_week;\n    Capital_Gain;\n    Capital_Loss;\n    Workclass;\n    Sex;\n    Race;\n    Country;\n    Marital_Status;\n    Income;\n\n    // Level 1 edges - direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Workclass -> Income;\n\n    // Level 2 edges\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Education_Num -> Hours_per_week;\n    Education_Num -> Workclass;\n\n    // Level 3 edges\n    Country -> Race;\n    Age -> Workclass;\n    Country -> Workclass;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 4 -> 3\n  Country -> Education_Num;\n  Country -> Race;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  \n  // Level 3 -> 2\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Age -> Occupation;\n  Country -> Workclass;\n  \n  // Level 2 -> 1\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Workclass -> Hours_per_week;\n  Education_Num -> Capital_Gain;\n  \n  // Level 1 -> Income\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Occupation -> Income;\n  Education_Num -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 4 nodes\n  Age -> Education_Num;\n  Race -> Education_Num;\n  Country -> Education_Num;\n  Country -> Workclass;\n  \n  // Level 3 nodes\n  Education_Num -> Occupation;\n  Workclass -> Occupation;\n  Age -> Marital_Status;\n  \n  // Level 2 nodes\n  Education_Num -> Capital_Gain;\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Marital_Status -> Relationship;\n  \n  // Level 1 nodes (direct causes of Income)\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Relationship -> Income;\n  Sex -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n\n    // Level 3\n    Country -> Race;\n    Age -> Workclass;\n    Education_Num -> Workclass;\n    Race -> Workclass;\n\n    // Level 4\n    Country -> Sex;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 - Parents of direct causes\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Hours_per_week;\n  Occupation -> Hours_per_week;\n  \n  // Level 3 - Grandparents of direct causes\n  Country -> Race;\n  Sex -> Education_Num;\n  Race -> Occupation;\n  \n  // Level 4 - Great-grandparents of direct causes\n  Country -> Sex;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Race -> Occupation;\n    \n    // Level 3\n    Country -> Race;\n    Age -> Marital_Status;\n    Sex -> Marital_Status;\n    \n    // Level 4\n    Country -> Sex;\n    Race -> Education_Num;\n    Marital_Status -> Hours_per_week;\n    Marital_Status -> Occupation;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Marital_Status;\n  Age -> Capital_Gain;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Education_Num;\n  Sex -> Occupation;\n  Sex -> Hours_per_week;\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Occupation -> Hours_per_week;\n  Marital_Status -> Relationship;\n  Marital_Status -> Hours_per_week;\n  Relationship -> Income;\n  Hours_per_week -> Income;\n  Workclass -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 5 -> 4\n  Country -> Race;\n  Country -> Education_Num;\n  \n  // Level 4 -> 3\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Education_Num;\n  Sex -> Occupation;\n  \n  // Level 3 -> 2\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  Education_Num -> Hours_per_week;\n  \n  // Level 2 -> 1\n  Occupation -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n  \n  // Level 1 (Direct causes)\n  Education_Num -> Income;\n  Workclass -> Income;\n  Marital_Status -> Income;\n  Age -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 5\n  Country -> Education_Num;\n  Race -> Education_Num;\n  \n  // Level 4\n  Education_Num -> Occupation;\n  Age -> Occupation;\n  \n  // Level 3\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  \n  // Level 2\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Occupation -> Income;\n  Education_Num -> Income;\n  \n  // Level 1 (Direct causes)\n  Sex -> Income;\n  Marital_Status -> Income;\n  Age -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 5 -> 4\n  Country -> Race;\n  Country -> Education_Num;\n  \n  // Level 4 -> 3\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Education_Num;\n  Sex -> Occupation;\n  \n  // Level 3 -> 2\n  Education_Num -> Occupation;\n  Education_Num -> Workclass;\n  Education_Num -> Capital_Gain;\n  \n  // Level 2 -> 1\n  Occupation -> Hours_per_week;\n  Occupation -> Income;\n  Workclass -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  \n  // Level 1 (Direct causes of Income)\n  Hours_per_week -> Income;\n  Marital_Status -> Income;\n  Relationship -> Income;\n  Education_Num -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Country -> Race;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Education_Num;\n  Sex -> Occupation;\n  Sex -> Hours_per_week;\n  Age -> Education_Num;\n  Age -> Marital_Status;\n  Age -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Marital_Status -> Relationship;\n  Marital_Status -> Hours_per_week;\n  Occupation -> Income;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Relationship -> Hours_per_week;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n  Sex -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Occupation; Capital_Gain; Capital_Loss; Hours_per_week; Income;\n  \n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Age -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Workclass -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Level 2 -> Level 1\n    Age -> Education_Num;\n    Age -> Occupation;\n    Country -> Education_Num;\n    Country -> Occupation;\n    Education_Num -> Occupation;\n    Race -> Education_Num;\n    Race -> Occupation;\n    Sex -> Occupation;\n    \n    // Level 1 -> Target\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Occupation; Capital_Gain; Capital_Loss; Hours_per_week; Income;\n  \n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Age -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Workclass -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Level 2 nodes -> Level 1 nodes\n    Age -> Education_Num;\n    Age -> Occupation;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Country -> Education_Num;\n    Country -> Occupation;\n    \n    // Level 1 nodes -> Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation; \n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 - Parents of direct causes\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Hours_per_week;\n  Occupation -> Hours_per_week;\n\n  // Level 3 - Grandparents of direct causes\n  Country -> Race;\n  Sex -> Education_Num;\n  Marital_Status -> Hours_per_week;\n  Workclass -> Occupation;\n  Race -> Occupation;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Income;\n    Education_Num;\n    Occupation;\n    Hours_per_week;\n    Capital_Gain;\n    Capital_Loss;\n    Workclass;\n    Age;\n    Sex;\n    Race;\n    Country;\n    Marital_Status;\n    \n    // Edges\n    Age -> Education_Num;\n    Age -> Occupation;\n    Age -> Hours_per_week;\n    Education_Num -> Occupation;\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Workclass -> Income;\n    Sex -> Occupation;\n    Sex -> Income;\n    Race -> Education_Num;\n    Race -> Occupation;\n    Race -> Income;\n    Country -> Education_Num;\n    Country -> Occupation;\n    Marital_Status -> Hours_per_week;\n    Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age;\n    Workclass;\n    Education_Num;\n    Marital_Status;\n    Occupation;\n    Relationship;\n    Race;\n    Sex;\n    Capital_Gain;\n    Capital_Loss;\n    Hours_per_week;\n    Country;\n    Income;\n\n    // Level 3 -> Level 2\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    Country -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Age -> Marital_Status;\n    \n    // Level 2 -> Level 1\n    Education_Num -> Occupation;\n    Education_Num -> Capital_Gain;\n    Occupation -> Hours_per_week;\n    Occupation -> Capital_Gain;\n    Marital_Status -> Relationship;\n    \n    // Level 1 -> Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Relationship -> Income;\n    Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Occupation;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Sex;\n  Race;\n  Country;\n  Income;\n\n  // Level 3 -> Level 2\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  Country -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  \n  // Level 2 -> Level 1\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  Age -> Occupation;\n  Age -> Capital_Gain;\n  \n  // Level 1 -> Income\n  Occupation -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Level 3 -> Level 2 -> Level 1 -> Income\n    Age -> Education_Num;\n    Age -> Occupation;\n    Age -> Capital_Gain;\n    Country -> Education_Num;\n    Country -> Occupation;\n    Race -> Education_Num;\n    Race -> Occupation;\n    Sex -> Education_Num;\n    Sex -> Occupation;\n    \n    Education_Num -> Occupation;\n    Education_Num -> Capital_Gain;\n    Education_Num -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    Occupation -> Capital_Gain;\n    Marital_Status -> Hours_per_week;\n    \n    Hours_per_week -> Income;\n    Occupation -> Income;\n    Education_Num -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Income;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Sex -> Income;\n  Occupation -> Income;\n  Occupation -> Hours_per_week;\n  Hours_per_week -> Income;\n  Workclass -> Income;\n  Workclass -> Hours_per_week;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Marital_Status -> Relationship;\n  Relationship -> Hours_per_week;\n  Relationship -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 4 -> 3\n  Country -> Education_Num;\n  Country -> Race;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  \n  // Level 3 -> 2\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Country -> Workclass;\n  \n  // Level 2 -> 1\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Workclass -> Hours_per_week;\n  Education_Num -> Capital_Gain;\n  \n  // Level 1 -> Income (direct causes)\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 - Parents of direct causes\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Hours_per_week;\n  Occupation -> Hours_per_week;\n  \n  // Level 3\n  Country -> Race;\n  Age -> Occupation;\n  Country -> Occupation;\n  \n  // Level 4\n  Race -> Occupation;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2 - Parents of direct causes\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    \n    // Level 3 - Grandparents of direct causes\n    Country -> Workclass;\n    Race -> Workclass;\n    Country -> Race;\n    \n    // Level 4 - Great-grandparents of direct causes\n    Marital_Status -> Workclass;\n    Relationship -> Workclass;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2 - Parents of direct causes\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Education_Num -> Occupation;\n    Sex -> Occupation;\n    Race -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    \n    // Level 3 - Grandparents of direct causes\n    Country -> Workclass;\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    Country -> Occupation;\n    \n    // Level 4 - Great-grandparents of direct causes\n    Race -> Workclass;\n    Sex -> Workclass;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Hours_per_week;\n\n  // Level 3\n  Country -> Race;\n  Age -> Workclass;\n  Education_Num -> Workclass;\n\n  // Level 4\n  Country -> Education_Num;\n  Sex -> Education_Num;\n\n  // Level 5\n  Country -> Sex;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  \n  // Level 3\n  Country -> Race;\n  Age -> Marital_Status;\n  Sex -> Marital_Status;\n  \n  // Level 4\n  Marital_Status -> Relationship;\n  Relationship -> Hours_per_week;\n  Country -> Workclass;\n  Workclass -> Occupation;\n  \n  // Level 5\n  Race -> Education_Num;\n  Workclass -> Hours_per_week;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Race -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n\n    // Level 3\n    Country -> Workclass;\n    Race -> Education_Num;\n    Age -> Occupation;\n    Country -> Occupation;\n    Marital_Status -> Hours_per_week;\n\n    // Level 4\n    Sex -> Education_Num;\n    Race -> Workclass;\n    Age -> Workclass;\n    Relationship -> Hours_per_week;\n\n    // Level 5\n    Country -> Race;\n    Age -> Marital_Status;\n    Sex -> Relationship;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 5 (root causes)\n  Race -> Sex;\n  Race -> Education_Num;\n  Country -> Education_Num;\n  Country -> Workclass;\n  Age -> Education_Num;\n  \n  // Level 4\n  Sex -> Occupation;\n  Sex -> Marital_Status;\n  Education_Num -> Occupation;\n  Education_Num -> Workclass;\n  \n  // Level 3\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Workclass -> Hours_per_week;\n  Marital_Status -> Relationship;\n  \n  // Level 2\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Relationship -> Income;\n  \n  // Level 1 (direct causes)\n  Education_Num -> Income;\n  Occupation -> Income;\n  Sex -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Demographic factors\n  Age -> Education_Num;\n  Age -> Workclass;\n  Age -> Occupation;\n  Age -> Capital_Gain;\n  Age -> Capital_Loss;\n  \n  // Education path\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  \n  // Work-related path\n  Workclass -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  \n  // Wealth indicators\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  \n  // Social factors\n  Country -> Education_Num;\n  Country -> Occupation;\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Sex -> Income;\n  \n  // Family status\n  Marital_Status -> Relationship;\n  Relationship -> Hours_per_week;\n  Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n  Sex -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 1,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  Education_Num -> Occupation;\n  Age -> Occupation;\n  Education_Num -> Capital_Gain;\n  Age -> Capital_Gain;\n  Education_Num -> Hours_per_week;\n  Sex -> Occupation;\n  Country -> Occupation;\n  \n  // Level 1 -> Target\n  Occupation -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n  Education_Num -> Income;\n  Sex -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n    // Level 2 -> Level 1\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    Education_Num -> Hours_per_week;\n    \n    // Level 1 -> Target\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Race -> Income;\n    Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Capital_Gain;\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Sex -> Occupation;\n  Sex -> Income;\n  Race -> Occupation;\n  Race -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n  Workclass -> Income;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Marital_Status -> Hours_per_week;\n  Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 2,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Level 2 -> Level 1\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    Education_Num -> Hours_per_week;\n    \n    // Level 1 -> Target\n    Occupation -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Hours_per_week -> Income;\n    Education_Num -> Income;\n    Sex -> Income;\n    Race -> Income;\n    Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Education_Num;\n  Occupation;\n  Hours_per_week;\n  Capital_Gain;\n  Capital_Loss;\n  Sex;\n  Race;\n  Country;\n  Workclass;\n  Income;\n\n  // Level 1 edges - direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n\n  // Level 2 edges\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Education_Num -> Occupation;\n  Sex -> Occupation;\n  Race -> Occupation;\n  Country -> Occupation;\n  Education_Num -> Hours_per_week;\n  Age -> Hours_per_week;\n  \n  // Level 3 edges\n  Country -> Race;\n  Age -> Workclass;\n  Country -> Workclass;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n    // Level 3 -> Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    \n    Age -> Occupation;\n    Education_Num -> Occupation;\n    Country -> Occupation;\n    \n    // Level 2 -> Level 1\n    Education_Num -> Capital_Gain;\n    Occupation -> Capital_Gain;\n    \n    Education_Num -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    \n    // Level 1 -> Target\n    Capital_Gain -> Income;\n    Hours_per_week -> Income;\n    Education_Num -> Income;\n    Occupation -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age;\n    Education_Num;\n    Occupation;\n    Hours_per_week;\n    Capital_Gain;\n    Capital_Loss;\n    Sex;\n    Race;\n    Workclass;\n    Country;\n    Income;\n    \n    // Level 1 edges - direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Workclass -> Income;\n    \n    // Level 2 edges\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Education_Num -> Occupation;\n    Sex -> Occupation;\n    Race -> Occupation;\n    Country -> Occupation;\n    \n    // Level 3 edges\n    Country -> Race;\n    Age -> Hours_per_week;\n    Race -> Workclass;\n    Country -> Workclass;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    // Level 3 -> Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    \n    Age -> Occupation;\n    Education_Num -> Occupation;\n    Sex -> Occupation;\n    \n    Age -> Marital_Status;\n    Sex -> Marital_Status;\n    \n    // Level 2 -> Level 1\n    Education_Num -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    Education_Num -> Capital_Gain;\n    Occupation -> Capital_Gain;\n    \n    Education_Num -> Capital_Loss;\n    Occupation -> Capital_Loss;\n    \n    // Level 1 -> Target\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Education_Num -> Income;\n    Occupation -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 3,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Occupation;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Level 1 edges - direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 edges\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Education_Num -> Occupation;\n  Sex -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Hours_per_week;\n\n  // Level 3 edges\n  Country -> Workclass;\n  Age -> Workclass;\n  Country -> Occupation;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Education_Num -> Occupation;\n  Education_Num -> Workclass;\n  Education_Num -> Income;\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Marital_Status;\n  Age -> Income;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Race -> Education_Num;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Sex -> Income;\n  Occupation -> Income;\n  Occupation -> Hours_per_week;\n  Workclass -> Income;\n  Workclass -> Hours_per_week;\n  Hours_per_week -> Income;\n  Marital_Status -> Relationship;\n  Relationship -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 - Parents of direct causes\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Hours_per_week;\n  Occupation -> Hours_per_week;\n  \n  // Level 3 - Grandparents of direct causes\n  Country -> Race;\n  Age -> Occupation;\n  Race -> Occupation;\n  Country -> Occupation;\n  \n  // Level 4 - Great-grandparents of direct causes\n  Sex -> Education_Num;\n  Marital_Status -> Hours_per_week;\n  Relationship -> Hours_per_week;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 4\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  \n  // Level 3\n  Education_Num -> Occupation;\n  Country -> Occupation;\n  Sex -> Occupation;\n  \n  // Level 2\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Education_Num -> Capital_Gain;\n  \n  // Level 1 (direct causes)\n  Hours_per_week -> Income;\n  Occupation -> Income;\n  Education_Num -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Marital_Status;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Sex -> Occupation;\n  Sex -> Hours_per_week;\n  Race -> Education_Num;\n  Race -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Occupation -> Hours_per_week;\n  Marital_Status -> Relationship;\n  Relationship -> Hours_per_week;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 4,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 - Parents of direct causes\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Education_Num -> Occupation;\n  Sex -> Occupation;\n  Race -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Hours_per_week;\n\n  // Level 3 - Grandparents of direct causes\n  Country -> Race;\n  Age -> Workclass;\n  Education_Num -> Workclass;\n\n  // Level 4 - Great-grandparents of direct causes\n  Country -> Education_Num;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Education_Num -> Occupation;\n  Sex -> Occupation;\n  Race -> Occupation;\n  Workclass -> Hours_per_week;\n  \n  // Level 3\n  Country -> Workclass;\n  Race -> Education_Num;\n  Age -> Occupation;\n  Country -> Occupation;\n  Marital_Status -> Hours_per_week;\n  \n  // Level 4\n  Sex -> Marital_Status;\n  Age -> Marital_Status;\n  Country -> Race;\n  \n  // Level 5\n  Country -> Sex;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Education_Num -> Occupation;\n    Sex -> Occupation;\n    Race -> Occupation;\n    Workclass -> Hours_per_week;\n    \n    // Level 3\n    Country -> Workclass;\n    Race -> Education_Num;\n    Age -> Occupation;\n    Marital_Status -> Hours_per_week;\n    \n    // Level 4\n    Country -> Race;\n    Age -> Marital_Status;\n    Sex -> Marital_Status;\n    \n    // Level 5\n    Country -> Sex;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n\n    // Level 3\n    Country -> Race;\n    Country -> Workclass;\n    Age -> Workclass;\n    Education_Num -> Workclass;\n\n    // Level 4\n    Race -> Education_Num;\n    Sex -> Education_Num;\n    \n    // Relationship nodes\n    Marital_Status -> Relationship;\n    Sex -> Relationship;\n    Age -> Relationship;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 5 -> 4\n    Country -> Race;\n    Country -> Education_Num;\n    \n    // Level 4 -> 3\n    Race -> Education_Num;\n    Race -> Occupation;\n    Sex -> Education_Num;\n    Sex -> Occupation;\n    \n    // Level 3 -> 2\n    Education_Num -> Occupation;\n    Education_Num -> Capital_Gain;\n    Education_Num -> Hours_per_week;\n    \n    // Level 2 -> 1\n    Occupation -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Hours_per_week -> Income;\n    \n    // Level 1 (Direct causes)\n    Age -> Income;\n    Workclass -> Income;\n    Education_Num -> Income;\n    Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "bedrock/sonnet-3-5",
+    "level": 5,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Marital_Status;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Occupation -> Hours_per_week;\n  Hours_per_week -> Income;\n  Marital_Status -> Relationship;\n  Relationship -> Hours_per_week;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    Age -> Income;\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Race -> Income;\n    Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 1,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  Age -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Race -> Income;\n  Country -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  \"Education_Num\" -> \"Occupation\"\n  \"Age\" -> \"Occupation\"\n  \"Education_Num\" -> \"Capital_Gain\"\n  \"Age\" -> \"Capital_Gain\"\n  \"Education_Num\" -> \"Hours_per_week\"\n  \"Sex\" -> \"Occupation\"\n  \"Race\" -> \"Occupation\"\n  \"Country\" -> \"Occupation\"\n\n  // Level 1 -> Income\n  \"Occupation\" -> \"Income\"\n  \"Education_Num\" -> \"Income\"\n  \"Hours_per_week\" -> \"Income\"\n  \"Capital_Gain\" -> \"Income\"\n  \"Capital_Loss\" -> \"Income\"\n  \"Sex\" -> \"Income\"\n  \"Age\" -> \"Income\"\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  Age -> Education_Num;\n  Age -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Country -> Occupation;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Age -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  \"Education_Num\" -> \"Occupation\"\n  \"Age\" -> \"Occupation\"\n  \"Education_Num\" -> \"Capital_Gain\"\n  \"Age\" -> \"Capital_Gain\"\n  \"Education_Num\" -> \"Hours_per_week\"\n  \"Sex\" -> \"Occupation\"\n  \"Race\" -> \"Occupation\"\n  \"Country\" -> \"Occupation\"\n  \n  // Level 1 -> Income\n  \"Occupation\" -> \"Income\"\n  \"Education_Num\" -> \"Income\"\n  \"Hours_per_week\" -> \"Income\"\n  \"Capital_Gain\" -> \"Income\"\n  \"Capital_Loss\" -> \"Income\"\n  \"Sex\" -> \"Income\"\n  \"Age\" -> \"Income\"\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    // Level 2 nodes -> Level 1 nodes\n    Age -> Education_Num;\n    Age -> Occupation;\n    Country -> Education_Num;\n    Country -> Occupation;\n    Race -> Education_Num;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Sex -> Hours_per_week;\n    \n    // Level 1 nodes -> Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 2,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Level 2 -> Level 1\n  Education_Num -> Occupation;\n  Age -> Occupation;\n  Sex -> Occupation;\n  Race -> Occupation;\n  Country -> Occupation;\n  \n  Education_Num -> Capital_Gain;\n  Age -> Capital_Gain;\n  \n  Education_Num -> Hours_per_week;\n  Age -> Hours_per_week;\n  Sex -> Hours_per_week;\n  \n  // Level 1 -> Income\n  Occupation -> Income;\n  Education_Num -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n  Age -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation; \n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 - Parents of direct causes\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Hours_per_week;\n  \n  // Level 3 - Grandparents of direct causes\n  Country -> Race;\n  Race -> Workclass;\n  Sex -> Education_Num;\n  Marital_Status -> Hours_per_week;\n  Relationship -> Hours_per_week;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Level 1 edges (direct causes)\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2 edges\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Education_Num -> Occupation;\n  Sex -> Occupation;\n  Race -> Occupation;\n  Country -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Hours_per_week;\n\n  // Level 3 edges\n  Country -> Race;\n  Age -> Marital_Status;\n  Marital_Status -> Workclass;\n  Sex -> Workclass;\n  Race -> Workclass;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Level 3 -> Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Country -> Occupation;\n    \n    // Level 2 -> Level 1\n    Education_Num -> Capital_Gain;\n    Occupation -> Capital_Gain;\n    Education_Num -> Hours_per_week;\n    Occupation -> Hours_per_week;\n    \n    // Level 1 -> Target\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Occupation;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Sex;\n  Race;\n  Country;\n  Income;\n\n  // Level 3 -> Level 2\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  Country -> Occupation;\n  Race -> Occupation;\n  \n  // Level 2 -> Level 1\n  Education_Num -> Occupation;\n  Education_Num -> Capital_Gain;\n  Age -> Occupation;\n  Age -> Capital_Gain;\n  \n  // Level 1 -> Income\n  Occupation -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Hours_per_week -> Income;\n  Workclass -> Income;\n  Education_Num -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 3,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 3 -> Level 2\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  \n  Race -> Occupation;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  \n  Age -> Marital_Status;\n  \n  // Level 2 -> Level 1\n  Education_Num -> Capital_Gain;\n  Occupation -> Capital_Gain;\n  \n  Education_Num -> Hours_per_week;\n  Occupation -> Hours_per_week;\n  Marital_Status -> Hours_per_week;\n  \n  // Level 1 -> Target\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Sex -> Income;\n  Race -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  \n  // Level 3\n  Country -> Race;\n  Age -> Marital_Status;\n  Sex -> Marital_Status;\n  \n  // Level 4\n  Country -> Sex;\n  Race -> Education_Num;\n  Marital_Status -> Hours_per_week;\n  Marital_Status -> Occupation;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation; \n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 1 - Direct causes of Income\n  Education_Num -> Income;\n  Occupation -> Income;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n\n  // Level 2\n  Age -> Education_Num;\n  Country -> Education_Num;\n  Education_Num -> Occupation;\n  Sex -> Occupation;\n  Race -> Occupation;\n  Workclass -> Hours_per_week;\n  Occupation -> Hours_per_week;\n\n  // Level 3\n  Country -> Race;\n  Age -> Workclass;\n  Education_Num -> Workclass;\n  Country -> Workclass;\n\n  // Level 4\n  Sex -> Education_Num;\n  Race -> Education_Num;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 4\n  Country -> Education_Num;\n  Race -> Education_Num;\n  Age -> Education_Num;\n  \n  // Level 3\n  Education_Num -> Occupation;\n  Age -> Occupation;\n  Education_Num -> Workclass;\n  \n  // Level 2\n  Occupation -> Hours_per_week;\n  Workclass -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  \n  // Level 1 (direct causes of Income)\n  Hours_per_week -> Income;\n  Occupation -> Income;\n  Education_Num -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Sex -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age;\n    Workclass;\n    Education_Num;\n    Marital_Status;\n    Occupation;\n    Relationship;\n    Race;\n    Sex;\n    Capital_Gain;\n    Capital_Loss;\n    Hours_per_week;\n    Country;\n    Income;\n\n    // Edges\n    Country -> Race;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Race -> Occupation;\n    Sex -> Education_Num;\n    Sex -> Occupation;\n    Sex -> Hours_per_week;\n    Age -> Education_Num;\n    Age -> Marital_Status;\n    Age -> Occupation;\n    Education_Num -> Occupation;\n    Education_Num -> Income;\n    Marital_Status -> Relationship;\n    Marital_Status -> Hours_per_week;\n    Occupation -> Income;\n    Occupation -> Capital_Gain;\n    Occupation -> Capital_Loss;\n    Relationship -> Hours_per_week;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Hours_per_week -> Income;\n    Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 4,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age; Workclass; Education_Num; Marital_Status; Occupation;\n  Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n  Hours_per_week; Country; Income;\n\n  // Level 4 -> 3\n  Country -> Education_Num;\n  Country -> Race;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  \n  // Level 3 -> 2\n  Education_Num -> Occupation;\n  Race -> Occupation;\n  Sex -> Occupation;\n  Country -> Workclass;\n  \n  // Level 2 -> 1\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Workclass -> Hours_per_week;\n  Education_Num -> Capital_Gain;\n  \n  // Level 1 -> Income (direct causes)\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 1,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n\n    // Level 3\n    Country -> Race;\n    Country -> Workclass;\n    Education_Num -> Workclass;\n    Age -> Workclass;\n\n    // Level 4\n    Sex -> Education_Num;\n    Marital_Status -> Hours_per_week;\n    Relationship -> Hours_per_week;\n\n    // Level 5\n    Age -> Marital_Status;\n    Sex -> Relationship;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 2,
+    "llm_full_response": "digraph G {\n  // Nodes\n  Age;\n  Workclass;\n  Education_Num;\n  Marital_Status;\n  Occupation;\n  Relationship;\n  Race;\n  Sex;\n  Capital_Gain;\n  Capital_Loss;\n  Hours_per_week;\n  Country;\n  Income;\n\n  // Edges\n  Age -> Education_Num;\n  Age -> Occupation;\n  Age -> Marital_Status;\n  Country -> Education_Num;\n  Country -> Occupation;\n  Race -> Education_Num;\n  Sex -> Education_Num;\n  Sex -> Occupation;\n  Education_Num -> Occupation;\n  Education_Num -> Income;\n  Occupation -> Income;\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Marital_Status -> Relationship;\n  Relationship -> Hours_per_week;\n  Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 3,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age; Workclass; Education_Num; Marital_Status; Occupation;\n    Relationship; Race; Sex; Capital_Gain; Capital_Loss;\n    Hours_per_week; Country; Income;\n\n    // Level 1 - Direct causes of Income\n    Education_Num -> Income;\n    Occupation -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n\n    // Level 2\n    Age -> Education_Num;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Sex -> Occupation;\n    Education_Num -> Occupation;\n    Workclass -> Hours_per_week;\n    Occupation -> Hours_per_week;\n\n    // Level 3\n    Country -> Workclass;\n    Race -> Workclass;\n    Age -> Occupation;\n    Country -> Occupation;\n\n    // Level 4\n    Sex -> Education_Num;\n    Marital_Status -> Hours_per_week;\n    \n    // Level 5\n    Age -> Marital_Status;\n    Sex -> Marital_Status;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 4,
+    "llm_full_response": "digraph G {\n  // Formatting\n  rankdir=LR;\n  node [shape=box];\n  \n  // Level 5\n  Country -> Education_Num;\n  Race -> Education_Num;\n  \n  // Level 4\n  Education_Num -> Occupation;\n  Age -> Occupation;\n  \n  // Level 3\n  Occupation -> Hours_per_week;\n  Occupation -> Capital_Gain;\n  Occupation -> Capital_Loss;\n  \n  // Level 2\n  Hours_per_week -> Income;\n  Capital_Gain -> Income;\n  Capital_Loss -> Income;\n  Occupation -> Income;\n  Education_Num -> Income;\n  \n  // Level 1 (Direct causes)\n  Age -> Income;\n  Sex -> Income;\n  Marital_Status -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  },
+  {
+    "model": "azure/gpt-4o",
+    "level": 5,
+    "iteration": 5,
+    "llm_full_response": "digraph G {\n    // Nodes\n    Age;\n    Workclass;\n    Education_Num;\n    Marital_Status;\n    Occupation;\n    Relationship;\n    Race;\n    Sex;\n    Capital_Gain;\n    Capital_Loss;\n    Hours_per_week;\n    Country;\n    Income;\n\n    // Edges\n    Country -> Race;\n    Country -> Education_Num;\n    Race -> Education_Num;\n    Race -> Occupation;\n    Sex -> Education_Num;\n    Sex -> Occupation;\n    Sex -> Hours_per_week;\n    Age -> Education_Num;\n    Age -> Marital_Status;\n    Age -> Occupation;\n    Education_Num -> Occupation;\n    Education_Num -> Income;\n    Marital_Status -> Relationship;\n    Marital_Status -> Hours_per_week;\n    Occupation -> Income;\n    Occupation -> Capital_Gain;\n    Occupation -> Capital_Loss;\n    Occupation -> Hours_per_week;\n    Relationship -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Hours_per_week -> Income;\n    Workclass -> Income;\n}",
+    "dot_graph": null,
+    "causal_model_output": {
+      "error": "No DOT graph extracted"
+    },
+    "dot_graph_llm": "dot\ndigraph G {\n    rankdir=LR;\n    node [shape=box];\n    \n    // Background variables\n    {rank=same; Age Education_Num Race Sex Country Marital_Status}\n    \n    // Intermediate outcomes\n    {rank=same; Occupation Capital_Gain Hours_per_week Capital_Loss}\n    \n    // Target\n    Income;\n    \n    // Edges from knowledge graph\n    Education_Num -> Occupation;\n    Age -> Occupation;\n    Race -> Occupation;\n    Sex -> Occupation;\n    Country -> Occupation;\n    \n    Education_Num -> Capital_Gain;\n    Age -> Capital_Gain;\n    \n    Age -> Hours_per_week;\n    Sex -> Hours_per_week;\n    Marital_Status -> Hours_per_week;\n    \n    // Direct effects on Income\n    Occupation -> Income;\n    Education_Num -> Income;\n    Hours_per_week -> Income;\n    Capital_Gain -> Income;\n    Capital_Loss -> Income;\n    Sex -> Income;\n    Age -> Income;\n}"
+  }
+]
