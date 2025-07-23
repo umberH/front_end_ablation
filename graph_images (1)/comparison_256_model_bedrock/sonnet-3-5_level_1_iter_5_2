@@ -1,0 +1,15 @@
+digraph G {
+    // Direct effects
+    Education_Num -> Income;
+    Hours_per_week -> Income;
+    Occupation -> Income;
+    Capital_Gain -> Income;
+    Capital_Loss -> Income;
+    
+    // Mediated pathways
+    Age -> Education_Num;
+    Age -> Occupation;
+    Education_Num -> Occupation;
+    
+    // Confounding relationships
+    Country -> {Education_Num Income}

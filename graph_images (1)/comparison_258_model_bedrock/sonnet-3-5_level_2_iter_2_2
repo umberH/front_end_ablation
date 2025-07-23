@@ -1,0 +1,30 @@
+digraph G {
+  // Demographic factors
+  Age -> Occupation;
+  Age -> Capital_Gain;
+  Age -> Hours_per_week;
+  
+  Education_Num -> Occupation;
+  Education_Num -> Capital_Gain;
+  Education_Num -> Hours_per_week;
+  Education_Num -> Income;
+  
+  Sex -> Occupation;
+  Race -> Occupation;
+  Country -> Occupation;
+  
+  // Work-related factors
+  Occupation -> Income;
+  Hours_per_week -> Income;
+  
+  // Financial factors
+  Capital_Gain -> Income;
+  Capital_Loss -> Income;
+  
+  // Additional inferred relationships
+  Marital_Status -> Hours_per_week;
+  Relationship -> Hours_per_week;
+  Workclass -> Income;
+  
+  // Formatting
+  {rank=same; Age Education_Num Sex Race Country Marital_Status Relationship}
